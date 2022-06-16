@@ -14,7 +14,7 @@ echo root:password | chpasswd
 
 pacman -S base-devel linux-headers networkmanager neovim git wget curl xorg-server xorg-xinit xorg-xradr xorg-xsetroot xf86-video-amdgpu amd-ucode grub efibootmgr htop wine winetricks picom nitrogen
 
-grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB #change the directory to /boot/efi is you mounted the EFI partition at /boot/efi
+grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB #change the directory to /boot/efi is you mounted the EFI partition at /boot/efi
 
 grub-mkconfig -o /boot/grub/grub.cfg
 
