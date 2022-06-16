@@ -1,18 +1,18 @@
 #!/bin/sh
 
-user = $(whoami)
+user=$(whoami)
+
+cd /home/$user
 
 git clone https://github.com/ututehutuhetuh/dwm
 
-cd dwm/
+cd /home/$user/dwm
 mv * /home/$user
-cd /home/$user/dwm-6.2/
-sudo make clean install
-cd /home/$user/st-0.8.3/
-sudo make clean install
-cd /home/$user/dwmstatus/
-make
-echo "idk tf the command i forgor"
-cd /home/$user/dwm-bar/
-chmod +x dwm_bar.sh
 cd /home/$user
+
+
+
+echo "I already untar the dwm, you just need to compile it"
+echo "to compile dwmstatus run \"make and sudo make PREFIX=/usr install\""
+echo "then add dwmstatus 2>&1 >/dev/null & to you're .xinitrc"
+
