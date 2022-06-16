@@ -4,6 +4,8 @@ user=$(whoami)
 
 cd /home/$user
 
+cp /etc/X11/xinit/xinitrc .xinitrc
+
 echo "# dwmstatus 2>&1 >/dev/null &" >> .xinitrc
 echo "# /home/adji/dwm-bar/dwm_bar.sh &" >> .xinitrc
 echo "setxkbmap dvorak &" >> .xinitrc
