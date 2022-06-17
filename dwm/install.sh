@@ -2,7 +2,7 @@
 
 set -e 
 
-user=$(whoami)
+user=adji
 
 cd /home/$user
 
