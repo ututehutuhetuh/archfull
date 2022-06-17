@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -e 
+
 user=$(whoami)
 
 cd /home/$user
@@ -19,7 +21,7 @@ cd /home/$user
 git clone https://github.com/ututehutuhetuh/dwm
 
 cd /home/$user/dwm
-mv * /home/$user
+mv dwm-6.2/ st-0.8.3/ dwmstatus/ dwm-bar/ /home/$user
 cd /home/$user
 
 cd dwm-6.2/
