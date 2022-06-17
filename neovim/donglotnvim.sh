@@ -2,7 +2,7 @@
 
 set -e 
 
-user = $(whoami)
+user=$(whoami)
 
 cd /home/$user/.config/
 git clone https://github.com/ututehutuhetuh/nvim
