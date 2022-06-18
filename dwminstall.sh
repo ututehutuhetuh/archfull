@@ -36,3 +36,4 @@ sudo make PREFIX=/usr install
 cd ..
 cd dwm-bar
 chmod +x dwm_bar.sh
+
