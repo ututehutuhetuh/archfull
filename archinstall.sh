@@ -17,11 +17,11 @@ echo "::1       localhost" >> /etc/hosts
 echo "127.0.1.1 arch.localdomain arch" >> /etc/hosts
 passwd
 
-pacman -S base-devel linux-headers networkmanager neovim git wget curl\
-          xorg-server xorg-xinit xorg-xrandr xorg-xsetroot xf86-video-amdgpu\
-          vulkan-radeon lib32-vulkan-radeon amd-ucode grub efibootmgr htop wine-staging\
-          winetricks picom nitrogen ttf-font-awesome ttf-dejavu pipewire\
-          pipewire-pulse pipewire-media-session firefox powerline-fonts\
+pacman -S base-devel linux-headers networkmanager neovim git wget curl \
+          xorg-server xorg-xinit xorg-xrandr xorg-xsetroot xf86-video-amdgpu \
+          vulkan-radeon lib32-vulkan-radeon amd-ucode grub efibootmgr htop wine-staging \
+          winetricks picom nitrogen ttf-font-awesome ttf-dejavu pipewire \
+          pipewire-pulse pipewire-media-session firefox powerline-fonts \
           btrfs-progs grub-btrfs gimp libreoffice sl
 
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB #change the directory to /boot/efi is you mounted the EFI partition at /boot/efi
