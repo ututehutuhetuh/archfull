@@ -2,7 +2,7 @@
 
 set -e
 
-sed -i -e '/^#\[multilib\]/s/.//' -e '94s/#//' /mnt/etc/pacman.conf
+sed -i -e '/^#\[multilib\]/s/.//' -e '94s/#//' /etc/pacman.conf
 pacman -Syyu
 timedatectl set-tmezone Asia/Kuching /etc/localtime
 hwclock --systohc
