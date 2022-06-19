@@ -4,7 +4,7 @@ set -e
 
 sed -i -e '/^#\[multilib\]/s/.//' -e '94s/#//' /etc/pacman.conf
 pacman -Syyu
-timedatectl set-timezone Asia/Kuching /etc/localtime
+ln -sf /usr/share/zoneinfo/Asia/Kuching /etc/localtime
 hwclock --systohc
 sed -i '/^#en_US.UTF-8/s/.//' /etc/locale.gen
 locale-gen
