@@ -16,7 +16,7 @@ echo "127.0.0.1	localhost" >> /etc/hosts
 echo "::1	localhost" >> /etc/hosts
 echo "127.0.1.1	arch.localdomain	arch" >> /etc/hosts
 
-pacman -S base-devel linux-headers networkmanager grub efibootmgr grub-btrfs btrfs-progs
+pacman -S base-devel linux-headers networkmanager grub efibootmgr grub-btrfs btrfs-progs neovim
 
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg
